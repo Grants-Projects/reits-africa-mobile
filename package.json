@@ -11,7 +11,7 @@
     "format": "prettier --check ./app"
   },
   "lint-staged": {
-    "app/**/*.{js,jsx}": [
+    "./app/**/*.{js,jsx}": [
       "eslint --ext .jsx --ext .js src/ --fix"
     ],
     "./app/**": [
