@@ -11,10 +11,10 @@
     "format": "prettier --check ./app"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
+    "app/**/*.{js,jsx}": [
       "eslint --ext .jsx --ext .js src/ --fix"
     ],
-    "./src/**": [
+    "./app/**": [
       "prettier --write ."
     ]
   },
