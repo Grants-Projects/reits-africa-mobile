@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: true,
+    node: true,
     es2021: true,
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: ["react", "react-hooks", "prettier"],
   rules: {
-    indent: ["error", "space"],
+    indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
