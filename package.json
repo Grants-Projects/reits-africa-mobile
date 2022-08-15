@@ -7,12 +7,12 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "eslint .",
+    "eslint": "eslint . --quiet",
     "format": "prettier --check ./app"
   },
   "lint-staged": {
     "app/**/*.{js,jsx}": [
-      "eslint --ext .jsx --ext .js app/ --fix"
+      "eslint --fix"
     ],
     "app/**": [
       "prettier --write ."
