@@ -1,0 +1,8 @@
+import { configureStore } from "@reduxjs/toolkit";
+import accountReducer from "./account/accountSlice.js";
+
+export const store = configureStore({
+  reducer: {
+    account: accountReducer,
+  },
+});

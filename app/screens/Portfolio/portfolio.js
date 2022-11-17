@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import BasePageLayout from "../../ components/basePageLayout.js/basePageLayout";
+import BasePageLayout from "../../components/basePageLayout.js/basePageLayout";
 import PropTypes from "prop-types";
 const Portfolio = ({ navigation }) => {
   return (

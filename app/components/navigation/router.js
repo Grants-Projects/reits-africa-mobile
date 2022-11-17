@@ -2,9 +2,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import CreateWallet from "../../screens/CreateWallet/createWallet";
 import Dashboard from "../../screens/Dashboard/dashboard";
+import Dashboard2 from "../../screens/Dashboard2/Dashboard";
 import GetStarted from "../../screens/GetStarted/getStarted";
 import Login from "../../screens/Login/login";
-import Portfolio from "../../screens/Portfolio/portfolio";
+import ProductDetail from "../../screens/ProductDetail/productDetail";
 import SignUp from "../../screens/SignUp/signUp";
 import Wallet from "../../screens/Wallet/wallet";
 import { Deposit, P2P, Withdrawal, SendAsset } from "../../screens/Wallet/index";
@@ -20,8 +21,9 @@ const Router = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="CreateWallet" component={CreateWallet} />
         <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Portfolio" component={Portfolio} />
+        <Stack.Screen name="Dashboard" component={Dashboard2} />
+        <Stack.Screen name="Portfolio" component={Dashboard} />
+        <Stack.Screen name="ProductDetail" component={ProductDetail} />
         <Stack.Screen name="Wallet" component={Wallet} />
         <Stack.Screen name="WalletDeposit" component={Deposit} />
         <Stack.Screen name="WalletP2P" component={P2P} />

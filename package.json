@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eslint": "eslint . --quiet",
-    "format": "prettier --check ./app"
+    "format": "prettier --check ./app",
+    "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=8081’"
   },
   "lint-staged": {
     "*.js": [
@@ -27,6 +28,7 @@
     "@react-native-picker/picker": "^2.4.4",
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
+    "@reduxjs/toolkit": "^1.8.6",
     "expo": "~46.0.7",
     "expo-status-bar": "~1.4.0",
     "near-api-js": "^1.0.0",
@@ -36,10 +38,15 @@
     "react-native-select-dropdown": "^2.0.4",
     "react-native-svg": "12.3.0",
     "react-native-svg-transformer": "^1.0.0",
-    "react-native-webview": "^11.23.1"
+    "react-native-webview": "^11.23.1",
+    "react-redux": "^8.0.4",
+    "redux-devtools-extension": "^2.13.9",
+    "remote-redux-devtools": "^0.5.16",
+    "expo-linear-gradient": "~11.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/react-redux": "^7.1.24",
     "eslint": "^8.22.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",

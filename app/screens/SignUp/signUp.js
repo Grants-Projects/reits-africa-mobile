@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet, TextInput, Text, Pressable } from "react-native";
-import CustomButton from "../../ components/button/button";
-import CustomCheckBox from "../../ components/checkbox/checkbox";
-import Header from "../../ components/header/header";
+import CustomButton from "../../components/button/button";
+import CustomCheckBox from "../../components/checkbox/checkbox";
+import Header from "../../components/header/header";
 import PropTypes from "prop-types";
 
 const SignUp = ({ navigation }) => {

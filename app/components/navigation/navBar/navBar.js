@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import PlaceHolder from "../../placeholder/placeHolder";
 import BackButton from "../../backButton/backButton";
+import MoreIcon from "../../../../assets/svg/more.svg";
+
 import PropTypes from "prop-types";
 const NavBar = ({ type, title, navigation }) => {
   return (
@@ -14,7 +16,7 @@ const NavBar = ({ type, title, navigation }) => {
         <>
           <BackButton navigation={navigation} />
           <Text style={styles.title}>{title}</Text>
-          <Text>:</Text>
+          <MoreIcon />
         </>
       )}
     </View>

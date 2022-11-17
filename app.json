@@ -3,7 +3,7 @@
     "name": "reits-africa",
     "slug": "reits-africa",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {

@@ -1,5 +1,5 @@
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import CustomButton from "../../ components/button/button";
+import { ImageBackground, StyleSheet, Text, View, Platform } from "react-native";
+import CustomButton from "../../components/button/button";
 import PropTypes from "prop-types";
 
 const GetStarted = ({ navigation }) => {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   getStartedBody: {
-    marginTop: 412,
+    marginTop: Platform.OS === "ios" ? 410 : 350,
   },
   getStartedBodyHeaderText: {
     fontSize: 35,
