@@ -1,8 +1,11 @@
 import { StyleSheet, View, Text, ScrollView } from "react-native";
-import AssetCard from "../../ components/assetCard/assetCard";
-import BasePageLayout from "../../ components/basePageLayout.js/basePageLayout";
-import CustomButton from "../../ components/button/button";
-import PlaceHolder from "../../ components/placeholder/placeHolder";
+import AssetCard from "../../components/assetCard/assetCard";
+import BasePageLayout from "../../components/basePageLayout.js/basePageLayout";
+import CustomButton from "../../components/button/button";
+import PlaceHolder from "../../components/placeholder/placeHolder";
+import { useSelector } from "react-redux";
+// import { setAccount, selectAccount } from "../../store/account/accountSlice";
+
 import PropTypes from "prop-types";
 
 const PropertyPlaceHolder = () => {
@@ -19,15 +22,19 @@ const PropertyPlaceHolder = () => {
 const arr = [1, 2, 3, 4, 5];
 
 const Dashboard = ({ navigation }) => {
+  // const dispatch = useDispatch();
+  const account = useSelector((state) => state.account.account);
+
+  console.log(account, "account");
   return (
-    <BasePageLayout navigation={navigation} type="dashboard">
+    <BasePageLayout navigation={navigation} title="My Portfolio">
       <ScrollView style={styles.dashboard}>
         <View style={styles.dashboardAssetCardWrapper}>
           <AssetCard title="Total Asset" price="0.00" />
         </View>
         <View style={styles.dashboardTransactionsWrapper}>
           <View>
-            <Text style={styles.dashboardTransactionsHeading}>Transactions</Text>
+            <Text style={styles.dashboardTransactionsHeading}>My Assets</Text>
           </View>
           <View style={styles.dashboardTransactionTableHeader}>
             <Text style={styles.dashboardTransactionTableHeaderItem1}>Property</Text>
@@ -50,7 +57,11 @@ const Dashboard = ({ navigation }) => {
             })}
           </ScrollView>
           <View style={styles.buttonWrapper}>
-            <CustomButton buttonStyle={styles.buttonStyle} buttonTextStyle={styles.buttonTextStyle}>
+            <CustomButton
+              buttonStyle={styles.buttonStyle}
+              buttonTextStyle={styles.buttonTextStyle}
+              // onPress={() => dispatch(setAccount({ name: "Temitoyin" }))}
+            >
               Load More
             </CustomButton>
           </View>

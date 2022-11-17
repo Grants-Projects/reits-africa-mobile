@@ -1,8 +1,8 @@
 import { View, StyleSheet } from "react-native";
-import CustomButton from "../../ components/button/button";
+import CustomButton from "../../components/button/button";
 // import CustomButton from "../../ components/button/button";
 import PropTypes from "prop-types";
-import Header from "../../ components/header/header";
+import Header from "../../components/header/header";
 
 const CreateWallet = ({ navigation }) => {
   return (

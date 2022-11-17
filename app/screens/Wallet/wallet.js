@@ -6,8 +6,8 @@ import Exchange from "../../../assets/svg/exchange.svg";
 import Send from "../../../assets/svg/send.svg";
 import PropTypes from "prop-types";
 
-import BasePageLayout from "../../ components/basePageLayout.js/basePageLayout";
-import WalletCard from "../../ components/walletCard";
+import BasePageLayout from "../../components/basePageLayout.js/basePageLayout";
+import WalletCard from "../../components/walletCard";
 
 const Wallet = ({ navigation }) => {
   return (

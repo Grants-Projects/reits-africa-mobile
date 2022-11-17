@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet, TextInput, Text, Pressable } from "react-native";
-import CustomButton from "../../ components/button/button";
-import CustomCheckBox from "../../ components/checkbox/checkbox";
-import Header from "../../ components/header/header";
+import CustomButton from "../../components/button/button";
+import CustomCheckBox from "../../components/checkbox/checkbox";
+import Header from "../../components/header/header";
 import PropTypes from "prop-types";
 
 const Login = ({ navigation }) => {
@@ -30,7 +30,7 @@ const Login = ({ navigation }) => {
       <CustomButton
         buttonStyle={styles.buttonStyle}
         buttonTextStyle={styles.buttonTextStyle}
-        onPress={() => navigation.navigate("CreateWallet")}
+        onPress={() => navigation.navigate("WaletWebView")}
       >
         Register
       </CustomButton>
